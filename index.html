@@ -52,7 +52,7 @@
         .shield-logo {
             width: 120px;
             height: 120px;
-            background: transparent;
+            background: radial-gradient(circle, rgba(30, 58, 138, 0.9) 0%, rgba(59, 130, 246, 0.8) 100%);
             border-radius: 15px;
             display: flex;
             align-items: center;
@@ -68,8 +68,8 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-            filter: brightness(1.1) contrast(1.1);
-            background: transparent;
+            filter: brightness(1.2) contrast(1.2);
+            mix-blend-mode: screen;
         }
         
         @keyframes pulse {
@@ -112,7 +112,7 @@
             transform: translate(-50%, -50%);
             width: 200px;
             height: 200px;
-            background: transparent;
+            background: radial-gradient(circle, rgba(30, 58, 138, 0.9) 0%, rgba(59, 130, 246, 0.8) 100%);
             border-radius: 50%;
             display: flex;
             flex-direction: column;
@@ -129,8 +129,8 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-            filter: brightness(1.1) contrast(1.1);
-            background: transparent;
+            filter: brightness(1.2) contrast(1.2);
+            mix-blend-mode: screen;
         }
         
         .center-logo-text {
@@ -148,10 +148,10 @@
         
         .step {
             position: absolute;
-            width: 320px;
-            padding: 25px;
+            width: 280px;
+            padding: 20px;
             background: rgba(15, 23, 42, 0.95);
-            border-radius: 15px;
+            border-radius: 12px;
             border: 2px solid #ef4444;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -166,29 +166,30 @@
         }
         
         .step-number {
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
             background: #ef4444;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
         }
         
         .step-title {
-            font-size: 1.3em;
+            font-size: 1.15em;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             color: #fbbf24;
         }
         
         .step-content {
             color: #cbd5e1;
-            line-height: 1.6;
+            line-height: 1.5;
+            font-size: 0.9em;
         }
         
         .step-content ul {
@@ -197,9 +198,10 @@
         }
         
         .step-content li {
-            margin-bottom: 8px;
-            padding-left: 20px;
+            margin-bottom: 6px;
+            padding-left: 18px;
             position: relative;
+            font-size: 0.95em;
         }
         
         .step-content li:before {
@@ -211,10 +213,11 @@
         
         .key-principle {
             background: rgba(251, 191, 36, 0.1);
-            border-left: 4px solid #fbbf24;
-            padding: 15px;
-            margin-top: 15px;
+            border-left: 3px solid #fbbf24;
+            padding: 12px;
+            margin-top: 12px;
             border-radius: 5px;
+            font-size: 0.9em;
         }
         
         .key-principle-title {
@@ -228,10 +231,10 @@
         
         /* Posicionamiento de los pasos */
         .step-1 { top: 10px; left: 50%; transform: translateX(-50%); }
-        .step-2 { top: 80px; right: 20px; }
-        .step-3 { top: 480px; right: 20px; }
+        .step-2 { top: 90px; right: 50px; }
+        .step-3 { top: 500px; right: 50px; }
         .step-4 { bottom: 10px; left: 50%; transform: translateX(-50%); }
-        .step-5 { top: 480px; left: 20px; }
+        .step-5 { top: 500px; left: 50px; }
         
         .conclusion {
             background: rgba(15, 23, 42, 0.95);
