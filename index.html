@@ -140,6 +140,12 @@
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         }
         
+        .center-logo-text {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
         .step {
             position: absolute;
             width: 280px;
@@ -153,10 +159,27 @@
         }
         
         .step:hover {
-            transform: scale(1.05) translateY(-5px);
+            transform: scale(1.05);
             box-shadow: 0 10px 40px rgba(239, 68, 68, 0.6);
             border-color: #fbbf24;
             background: rgba(15, 23, 42, 0.98);
+        }
+        
+        /* Hover específico para tarjetas con top */
+        .step-1:hover,
+        .step-2:hover {
+            transform: scale(1.05) translateY(5px);
+        }
+        
+        /* Hover específico para tarjetas con bottom */
+        .step-3:hover,
+        .step-5:hover {
+            transform: scale(1.05) translateY(-5px);
+        }
+        
+        /* Hover para tarjeta central */
+        .step-4:hover {
+            transform: translateX(-50%) scale(1.05) translateY(-5px);
         }
         
         .step-number {
